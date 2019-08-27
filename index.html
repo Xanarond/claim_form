@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<!--<div class="row align-content-center">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <form>
+                <div class="form-group ">
+                    <label for="exampleFormControlFile1">Insert doc(docx) file:</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>-->
+
+<div class="container justify-content-center">
+    <div class="row justify-content-center">
+        <div class="col-md-4 p-5">
+            <div class="row justify-content-center">
+                <!--<h1>AutoClaim</h1>-->
+            </div>
+        </div>
+    </div>
+    <form action="create_doc.php" method="post" id="form">
+        <div class="row justify-content-center">
+            <div class="col-md-4 p-3">
+                <label for="company">Select company:</label>
+                <select class="form-control" id="company" name="company" onclick="getContractList(this)">
+                    <option value="glt">ООО «Глобал Логистик Транспорт»</option>
+                    <option value="iteco">ООО «Итеко Россия»</option>
+                    <option value="rusglobal">ООО «ТЭК РУСГЛОБАЛ»</option>
+                    <option value="transcord">ООО «ТрансКорд»</option>
+                    <option value="itella">ООО «Ителла»</option>
+                    <option value="vesta">ООО «Транспортная компания «Веста»</option>
+                    <option value="crafter">ООО «Крафтер-ЦФО»</option>
+                    <option value="union">ООО «Юнион Сервис Рус»</option>
+                    <option value="milarin">ООО «Миларин»</option>
+                </select>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="form-group">
+                    <label for="th_num">Insert TH:</label>
+                    <textarea class="form-control" id="th_num" name="th_num" rows="1"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="quantity">Insert quantity:</label>
+                    <input type="number" class="form-control" id="quantity" name="quantity" placeholder="шт">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="sum">Insert sum:</label>
+                    <input type="text" class="form-control" id="sum" name="sum" placeholder="00 руб. 00 коп.">
+                </div>
+            </div>
+            <div class="col-md-4 m-1">
+                <label for="contract">Select contract:</label>
+                <select class="form-control" id="contract" name="contract">
+                    <option>№ SDSRU20170109/GLT от 09.01.2017</option>
+                    <option>№ SDSRU20171009/ITECORUSSIA от 09.10.2017</option>
+                    <option>№ SDSRU20150801/RUSGLOBAL от 01.08.2015</option>
+                    <option>№ SDSRU20181005/TransCord от 05.10.2018</option>
+                    <option>№ SDSRU20150801/ITELLA от 01.08.2015</option>
+                    <option>№ SDSRU20181005/Vesta от 05.10.2018</option>
+                    <option>№ SDSRU20150801/Crafter от 01.08.2015</option>
+                    <option>№ 1 от 01.04.2018</option>
+                    <option>№ SDSRU20161101/GKMELARIN от 01.11.2016</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-12 p-3">
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-danger">Создать</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/chained.js"></script>
+</html>
