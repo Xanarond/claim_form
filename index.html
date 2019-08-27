@@ -36,55 +36,54 @@
             <div class="col-md-4 p-3">
                 <label for="company">Select company:</label>
                 <select class="form-control" id="company" name="company" onclick="getContractList(this)">
-                    <option value="glt">ООО «Глобал Логистик Транспорт»</option>
-                    <option value="iteco">ООО «Итеко Россия»</option>
-                    <option value="rusglobal">ООО «ТЭК РУСГЛОБАЛ»</option>
-                    <option value="transcord">ООО «ТрансКорд»</option>
-                    <option value="itella">ООО «Ителла»</option>
-                    <option value="vesta">ООО «Транспортная компания «Веста»</option>
-                    <option value="crafter">ООО «Крафтер-ЦФО»</option>
-                    <option value="union">ООО «Юнион Сервис Рус»</option>
-                    <option value="milarin">ООО «Миларин»</option>
+                    <option value="">Выберите компанию:</option>
+                    <option value="ООО «Глобал Логистик Транспорт»">ООО «Глобал Логистик Транспорт»</option>
+                    <option value="ООО «Итеко Россия»">ООО «Итеко Россия»</option>
+                    <option value="ООО «ТЭК РУСГЛОБАЛ»">ООО «ТЭК РУСГЛОБАЛ»</option>
+                    <option value="ООО «ТрансКорд»">ООО «ТрансКорд»</option>
+                    <option value="ООО «Ителла»">ООО «Ителла»</option>
+                    <option value="ООО «Транспортная компания «Веста»">ООО «Транспортная компания «Веста»</option>
+                    <option value="ООО «Крафтер-ЦФО»">ООО «Крафтер-ЦФО»</option>
+                    <option value="ООО «Юнион Сервис Рус»">ООО «Юнион Сервис Рус»</option>
+                    <option value="ООО «Миларин»">ООО «Миларин»</option>
                 </select>
             </div>
             <div class="col-md-4 p-3">
                 <div class="form-group">
                     <label for="th_num">Insert TH:</label>
-                    <textarea class="form-control" id="th_num" name="th_num" rows="1"></textarea>
+                    <input type="text" class="form-control" id="th_num" name="th_num"/>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-4 p-3">
                 <div class="form-group">
                     <label for="quantity">Insert quantity:</label>
                     <input type="number" class="form-control" id="quantity" name="quantity" placeholder="шт">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-3">
                 <div class="form-group">
                     <label for="sum">Insert sum:</label>
                     <input type="text" class="form-control" id="sum" name="sum" placeholder="00 руб. 00 коп.">
                 </div>
             </div>
-            <div class="col-md-4 m-1">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 p-3">
                 <label for="contract">Select contract:</label>
                 <select class="form-control" id="contract" name="contract">
-                    <option>№ SDSRU20170109/GLT от 09.01.2017</option>
-                    <option>№ SDSRU20171009/ITECORUSSIA от 09.10.2017</option>
-                    <option>№ SDSRU20150801/RUSGLOBAL от 01.08.2015</option>
-                    <option>№ SDSRU20181005/TransCord от 05.10.2018</option>
-                    <option>№ SDSRU20150801/ITELLA от 01.08.2015</option>
-                    <option>№ SDSRU20181005/Vesta от 05.10.2018</option>
-                    <option>№ SDSRU20150801/Crafter от 01.08.2015</option>
-                    <option>№ 1 от 01.04.2018</option>
-                    <option>№ SDSRU20161101/GKMELARIN от 01.11.2016</option>
+
                 </select>
+            </div>
+            <div class="col-md-4 p-3">
+                <label for="period">Insert period:</label>
+                <input type="text" class="form-control" id="period" name="period" placeholder="месяца 20..">
             </div>
         </div>
         <div class="col-md-12 p-3">
             <div class="row justify-content-center">
-                <button type="submit" class="btn btn-danger">Создать</button>
+                <button type="submit" class="btn btn-danger">Create claim</button>
             </div>
         </div>
     </form>
